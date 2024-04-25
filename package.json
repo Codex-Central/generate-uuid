@@ -1,28 +1,27 @@
 {
-  "name": "@codexcentral/<name_of_package>",
-  "version": "1.0.0",
-  "description": "Function to allow....",
+  "name": "@codexcentral/generate-uuid",
+  "version": "1.1.0",
+  "description": "This is a simple package to generate a UUID (Universally Unique Identifier).",
   "license": "Apache-2.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
   "files": [
     "dist",
     "README.md",
     "LICENSE"
   ],
-  "keywords": ["typescript"],
+  "keywords": ["typescript", "uuid", "generate", "generate-uuid"],
   "author": "Roberto Silva Zuñiga <c.roberto.u@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Codex-Central/<name_of_package>.git"
+    "url": "git+https://github.com/Codex-Central/generate-uuid.git"
   },
   "bugs": {
-    "url": "https://github.com/Codex-Central/<name_of_package>/issues"
+    "url": "https://github.com/Codex-Central/generate-uuid/issues"
   },
-  "homepage": "https://github.com/Codex-Central/<name_of_package>#readme",
+  "homepage": "https://github.com/Codex-Central/generate-uuid#readme",
   "scripts": {
-    "build": "rm -rf dist/ && yarn build:esm && yarn build:cjs",
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc --outDir dist/esm --module esnext",
     "build:cjs": "tsc --outDir dist/cjs --module commonjs"
   },
